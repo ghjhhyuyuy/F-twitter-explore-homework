@@ -2,3 +2,14 @@
   padding: $padding;
   border: solid 1px $border-color;
 }
+
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+
+.display-flex-space-evenly {
+  @extend .display-flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}

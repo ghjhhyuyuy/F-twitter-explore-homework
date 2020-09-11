@@ -1,22 +1,44 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  @extend .display-flex-space-evenly;
   height: 100%;
   width: 100%;
 }
 
 .form {
   @extend .outlook;
+  @extend .display-flex-space-evenly;
   width: 30%;
   height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+}
+
+.input {
+  width: 100%;
+  border-bottom: 1px solid $gray;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: $body-bg;
+  height: 10%;
+  color: $gray;
+  &:focus {
+    outline: none;
+  }
 }
 
 .move-start {
   align-self: start;
+}
+
+.blue {
+  color: $primary-color;
+}
+
+.login {
+  @include btn-variant($body-bg, $gray);
+  width: 100%;
+}
+
+.regist {
+  @include btn-variant($gray, $white);
+  width: 100%;
 }

@@ -4,4 +4,8 @@
 }
 
 @mixin btn-variant($backgroud-color, $font-color) {
+  background-color: $backgroud-color;
+  color: $font-color;
+  border-radius: 80px;
+  border: 1px solid $gray;
 }

@@ -1,6 +1,18 @@
 .header {
   @extend .outlook;
-  display: flex;
+  @extend .display-flex;
   justify-content: space-between;
-  align-items: center;
+  section {
+    width: 10%;
+  }
+  button {
+    &:first-child {
+      width: 45%;
+      @include btn-variant($body-bg, $gray);
+    }
+    &:last-child {
+      width: 45%;
+      @include btn-variant($gray, $white);
+    }
+  }
 }
