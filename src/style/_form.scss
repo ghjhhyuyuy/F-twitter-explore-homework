@@ -8,10 +8,9 @@
 }
 
 .form {
-  padding: $padding;
+  @extend .outlook;
   width: 30%;
   height: 60%;
-  border: solid 1px $border-color;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
