@@ -1,10 +1,12 @@
 .main {
+  //TODO feedback: 一下应该使用@include而不是@extend, 要去了解一下二者的区别
   @extend .display-flex-space-evenly;
   height: 100%;
   width: 100%;
 }
 
 .form {
+  //TODO feedback: 一下应该使用@include而不是@extend, 要去了解一下二者的区别
   @extend .outlook;
   @extend .display-flex-space-evenly;
   width: 30%;
@@ -14,6 +16,7 @@
 .input {
   width: 100%;
   border-bottom: 1px solid $gray;
+  //TODO feedback: 以下三行代码删掉。然后在border-bottom这行代码之前加border:none;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -34,11 +37,13 @@
 }
 
 .login {
+  //TODO feedback: @include使用正确
   @include btn-variant($body-bg, $gray);
   width: 100%;
 }
-
+//TODO feedback: 单词拼写错误
 .regist {
+  //TODO feedback: @include使用正确
   @include btn-variant($gray, $white);
   width: 100%;
 }

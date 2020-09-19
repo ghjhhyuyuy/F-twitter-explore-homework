@@ -18,8 +18,11 @@
   <main class="main">
     <form class="form">
       <h1>查看世界上正在发生的事情</h1>
+      <!--      TODO feedback: 语义化标签使用不正确：placeholder里面的内容应该放入<label>标签-->
       <input class="input" placeholder="电话、邮件地址或用户名"/>
       <input class="input" placeholder="密码"/>
+      <!--      TODO feedback: 一般忘记密码是一个连接，那么这里就应该使用<a>标签-->
+      <!--      TODO feedback: css class的命名不合理，没有体现业务逻辑-->
       <p class="move-start blue">忘记密码？</p>
       <button class="login">登录</button>
       <p>或</p>
